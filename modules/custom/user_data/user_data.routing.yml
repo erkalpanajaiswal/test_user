@@ -1,0 +1,8 @@
+user_data.get_user_data:
+  path: '/user_json_data'
+  defaults:
+    _controller: '\Drupal\user_data\Controller\UserDataController::getUserData'
+    _title: 'User Data'
+  requirements:
+    _custom_access: '\Drupal\user_data\Controller\UserDataController::access'
+    

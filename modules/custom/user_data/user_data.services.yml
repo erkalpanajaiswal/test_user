@@ -1,0 +1,4 @@
+services:
+  user_data.get_user_data:
+    class: Drupal\user_data\Service\UserDataService
+    arguments: ['@current_user']
